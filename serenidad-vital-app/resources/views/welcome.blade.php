@@ -26,35 +26,66 @@
 
             {{-- Navbar --}}
             <div class="d-flex justify-content-center">
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c6a7de; font-size: 24px;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c6a7de; font-size: 20px;">
                     <div class="container-fluid ">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
+                                    <a class="nav-link" href="#">Nosotros</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Reserva un turno</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
+        </div>
+
+        <div id="home">
+            <div id="home-top">
+                <div id="home-top-left">
+                    <div id="home-top-left-title">
+                        <h1>¡Bienvenidos!</h1>
+                    </div>
+                    <div id="home-top-left-text">
+                        <p>En Serenidad Vital te ofrecemos un espacio de contención y acompañamiento para que puedas encontrar tu bienestar físico y emocional.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="home-bottom">
+                <div id="home-bottom-left">
+                    <div id="home-bottom-left-img">
+                        <img src="{{asset('img/serenidad2.jpg')}}" alt="home-bottom-left-img">
+                    </div>
+                </div>
+                <div id="home-bottom-right">
+                    <div id="home-bottom-right-title">
+                        <h1>¿Qué es la Serenidad?</h1>
+                    </div>
+                    <div id="home-bottom-right-text">
+                        <p>La serenidad es un estado de calma y tranquilidad que se logra cuando se alcanza el equilibrio entre el cuerpo y la mente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="nosotros">
+
         </div>
     </body>
 </html>
