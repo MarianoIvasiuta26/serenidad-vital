@@ -59,33 +59,169 @@
             <div id="home-top">
                 <div id="home-top-left">
                     <div id="home-top-left-title">
-                        <h1>¡Bienvenidos!</h1>
+                        <h1>Consultorio Serenidad Vital</h1>
                     </div>
                     <div id="home-top-left-text">
                         <p>En Serenidad Vital te ofrecemos un espacio de contención y acompañamiento para que puedas encontrar tu bienestar físico y emocional.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div id="home-bottom">
-                <div id="home-bottom-left">
-                    <div id="home-bottom-left-img">
-                        <img src="{{asset('img/serenidad2.jpg')}}" alt="home-bottom-left-img">
-                    </div>
-                </div>
-                <div id="home-bottom-right">
-                    <div id="home-bottom-right-title">
-                        <h1>¿Qué es la Serenidad?</h1>
-                    </div>
-                    <div id="home-bottom-right-text">
-                        <p>La serenidad es un estado de calma y tranquilidad que se logra cuando se alcanza el equilibrio entre el cuerpo y la mente.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div id="nosotros">
+            <div id="nosotros-top">
+                <div id="nosotros-top-left">
+                    <div id="nosotros-top-left-img">
+                        <img src="{{asset('img/nosotros.jpg')}}" alt="">
+                    </div>
+                </div>
+                <div id="nosotros-top-right">
+                    <div id="nosotros-top-right-title">
+                        <h1>¿Quiénes somos?</h1>
+                    </div>
+                    <div id="nosotros-top-right-text">
+                        <p>Somos un equipo de profesionales de la salud comprometidos con tu bienestar integral. En Serenidad Vital, trabajamos en conjunto para brindarte un espacio seguro, cálido y de apoyo donde puedas explorar y fortalecer tu bienestar físico, emocional y mental. Nuestra misión es acompañarte en tu camino hacia la serenidad, proporcionándote herramientas y recursos para que puedas alcanzar un estado de equilibrio y armonía en tu vida diaria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div id="servicios">
+            <div id="servicios-top">
+                <div id="servicios-top-title">
+                    <h1>Nuestros Servicios</h1>
+                </div>
+                <div id="servicios-top-services">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/terapia1.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terapia Individual</h5>
+                                    <p class="card-text">
+                                        Sesiones individuales con un psicólogo para abordar problemas específicos, como ansiedad, depresión, estrés, relaciones interpersonales, autoestima, trauma, entre otros.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/terapia-pareja.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terapia de Pareja</h5>
+                                    <p class="card-text">
+                                        Sesiones dirigidas a mejorar la comunicación, resolver conflictos, fortalecer la relación y trabajar en problemas específicos dentro de la pareja.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/terapia-familiar.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terapia Familiar</h5>
+                                    <p class="card-text">
+                                        Sesiones diseñadas para abordar conflictos familiares, mejorar la comunicación familiar, establecer límites saludables, resolver problemas de crianza, y fortalecer las relaciones familiares.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/terapia-jovenes.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Psicoterapia Infantil y Adolescente</h5>
+                                    <p class="card-text">
+                                        Sesiones dirigidas a niños y adolescentes para abordar problemas específicos relacionados con el desarrollo, el comportamiento, la educación, las relaciones familiares, etc.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/evaluacion.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Evaluación Psicológica</h5>
+                                    <p class="card-text">
+                                        Evaluaciones psicológicas para diagnosticar trastornos mentales, evaluar habilidades cognitivas, identificar problemas de aprendizaje, evaluar el funcionamiento emocional, entre otros.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/salud-mental.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Asesoramiento en Salud Mental</h5>
+                                    <p class="card-text">
+                                        Orientación y apoyo para mejorar el bienestar emocional y mental, aprender estrategias de afrontamiento saludables, promover la prevención y el autocuidado, y acceder a recursos comunitarios.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/asesoramiento-psicologico.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Asesoramiento Psicológico</h5>
+                                    <p class="card-text">
+                                        Sesiones breves dirigidas a proporcionar orientación, apoyo emocional y estrategias de afrontamiento para enfrentar situaciones difíciles de la vida, como problemas laborales, conflictos familiares, transiciones vitales, etc.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/terapia-online.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terapia Online</h5>
+                                    <p class="card-text">
+                                        Sesiones terapéuticas realizadas a través de plataformas de videoconferencia, chat o teléfono, que ofrecen la comodidad de recibir terapia desde cualquier lugar con acceso a internet.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{asset('img/orientacion-vocacional.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Orientación Vocacional y Profesional</h5>
+                                    <p class="card-text">
+                                        Servicios dirigidos a ayudar a las personas a explorar sus intereses, habilidades y valores para tomar decisiones educativas y profesionales informadas.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -10,79 +10,135 @@ body{
 
 #home{
     width: 100%;
-    height: 100vh;
-    background-color: #2b153f;
-}
-
-#home-top{
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/terapia2.jpg');
+    height: auto;
+    background-image: url('../img/terapia2-editada.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#home-top-left{
-    width: 50%;
+#home-top{
+    width: 100%;
     height: 100%;
-    float: left;
-    padding: 10% 0 0 10%;
+}
+
+#home-top-left{
+    width: 100%;
+    height: 100%;
+    padding: 10% 0 10% 0;
 }
 
 #home-top-left-title{
     font-size: 3em;
     color: #fff;
     font-weight: bold;
+    text-align: center;
+    user-select: none;
 }
 
 #home-top-left-text{
     font-size: 1.5em;
     color: #fff;
-    font-weight: bold;
+    text-align: center;
+    padding: 0 5% 0 5%;
+    user-select: none;
 }
 
 #home-bottom {
     width: 100%;
     height: 100%;
-    background-color: #c6a7de;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #home-bottom-right {
     width: 50%;
     height: 100%;
     box-sizing: border-box;
-    padding: 10%;
+    padding: 10% 0 10% 10%;
 }
 
 #home-bottom-right-title {
     font-size: 3em;
-    color: #582869;
+    color: #fff;
     font-weight: bold;
+    user-select: none;
 }
 
 #home-bottom-right-text {
     font-size: 1.5em;
-    color: #000000;
+    color: #fff;
+    user-select: none;
 }
 
-#home-bottom-left {
+#nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+#nosotros-top-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 10%;
+    background-color: #c6a7de;
+}
+
+#nosotros-top-right-title{
+    font-size: 3em;
+    color: #582869;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+#nosotros-top-right-text{
+    font-size: 1.5em;
+    color: #000000;
+    text-align: justify;
+    user-select: none;
+}
+
+#nosotros-top-left{
     width: 50%;
     height: 100%;
     box-sizing: border-box;
+    float: left;
 }
 
-#home-bottom-left-img {
+#nosotros-top-left-img {
     width: 100%;
     height: 100%;
 }
 
-#home-bottom-left-img img {
+#nosotros-top-left-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#servicios{
+    width: 100%;
+    height: auto;
+}
+
+#servicios-top{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    background-color: #fff;
+}
+
+#servicios-top-title{
+    font-size: 3em;
+    color: #582869;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+#servicios-top-services{
+    padding: 5%;
 }
 
 /* Media Query para pantallas más pequeñas (ajustar según sea necesario) */
