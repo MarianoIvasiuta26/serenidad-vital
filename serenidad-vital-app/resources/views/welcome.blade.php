@@ -223,5 +223,153 @@
                 </div>
             </div>
         </div>
+
+        <div id="contacto">
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div id="contacto-left">
+                        <div id="contacto-title">
+                            <h1>Contacto</h1>
+                        </div>
+                        <div id="contacto-text">
+                            <p>Si tenés alguna consulta o querés solicitar un turno, podés contactarnos a través de los siguientes medios:</p>
+                        </div>
+                        <div id="contacto-info">
+                            <div id="contacto-info-phone">
+                                <p><strong>Teléfono:</strong> 11-1234-5678</p>
+                            </div>
+                            <div id="contacto-info-email">
+                                <p><strong>Email:</strong> consultas@serenidadvital.com</p>
+                            </div>
+                            <div id="contacto-info-address">
+                                <p><strong>Dirección:</strong> Av. Siempre Viva 1234, CABA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div id="contacto-right">
+                        <div id="contacto-form">
+                            <h3 style="color: #fff">Formulario de contacto</h3>
+                            <form action="" class="mt-3">
+                                <div class="row g-2">
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                            <label for="nombre">Nombre</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                            <label for="apellido">Apellido</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2">
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="email" placeholder="Email">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+                                            <label for="telefono">Teléfono</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px"></textarea>
+                                    <label for="mensaje">Mensaje</label>
+                                </div>
+
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-success">Contactar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="solicitar-turno">
+            <form action="">
+                <div id="solicitar-turno-title">
+                    <h1>Solicitar Turno</h1>
+                </div>
+                <div id="solicitar-turno-text">
+                    <p>Si quiere solicitar un turno, complete el siguiente formulario y nos pondremos en contacto con vos a la brevedad.</p>
+                </div>
+
+                <div id="solicitar-turno-form">
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                <label for="nombre">Nombre</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                <label for="apellido">Apellido</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="tipo-consulta" aria-label="tipo de consulta">
+                            <option selected disabled>Seleccione el tipo de consulta</option>
+                            <option value="1">Terapia Individual</option>
+                            <option value="2">Terapia de Pareja</option>
+                            <option value="3">Terapia Familiar</option>
+                            <option value="4">Psicoterapia Infantil y Adolescente</option>
+                            <option value="5">Evaluación Psicológica</option>
+                            <option value="6">Asesoramiento en Salud Mental</option>
+                            <option value="7">Asesoramiento Psicológico</option>
+                            <option value="8">Terapia Online</option>
+                            <option value="9">Orientación Vocacional y Profesional</option>
+                        </select>
+                        <label for="tipo-consulta">Tipo de consulta</label>
+                    </div>
+
+                    <div class="row mb-3">
+                        <button type="submit" class="btn btn-success">Solicitar Turno</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="footer">
+            <div id="footer-info" class="d-flex justify-content-center">
+                <p>2024 Consultorio Serenidad Vital - Todos los derechos reservados</p>
+            </div>
+        </div>
     </body>
 </html>
