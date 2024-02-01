@@ -252,19 +252,32 @@
                     <div id="contacto-right">
                         <div id="contacto-form">
                             <h3 style="color: #fff">Formulario de contacto</h3>
-                            <form action="" class="mt-3">
+                            <form action="{{route('contacto.store')}}" method="POST" class="mt-3">
+                                @csrf
                                 <div class="row g-2">
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
                                             <label for="nombre">Nombre</label>
+                                        </div>
+
+                                        <div>
+                                            @error('nombre')
+                                                <small class="text-danger">{{$message}}</small>
+                                            @enderror
                                         </div>
                                     </div>
 
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
                                             <label for="apellido">Apellido</label>
+                                        </div>
+
+                                        <div>
+                                            @error('apellido')
+                                                <small class="text-danger">{{$message}}</small>
+                                            @enderror
                                         </div>
                                     </div>
                                 </div>
@@ -272,22 +285,40 @@
                                 <div class="row g-2">
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                                             <label for="email">Email</label>
+                                        </div>
+
+                                        <div>
+                                            @error('email')
+                                                <small class="text-danger">{{$message}}</small>
+                                            @enderror
                                         </div>
                                     </div>
 
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+                                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
                                             <label for="telefono">Teléfono</label>
+                                        </div>
+
+                                        <div>
+                                            @error('telefono')
+                                                <small class="text-danger">{{$message}}</small>
+                                            @enderror
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Mensaje" id="mensaje" name="mensaje" style="height: 100px"></textarea>
                                     <label for="mensaje">Mensaje</label>
+                                </div>
+
+                                <div>
+                                    @error('mensaje')
+                                        <small class="text-danger">{{$message}}</small>
+                                    @enderror
                                 </div>
 
                                 <div class="mb-3 d-flex justify-content-end">

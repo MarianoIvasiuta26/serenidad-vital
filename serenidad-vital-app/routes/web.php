@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\SolicitudTurnoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('contacto', ContactoController::class)->names('contacto');
+Route::resource('solicitar-turno', SolicitudTurnoController::class)->names('solicitar-turno');
