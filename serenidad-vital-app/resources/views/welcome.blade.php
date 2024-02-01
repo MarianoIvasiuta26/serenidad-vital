@@ -17,7 +17,7 @@
     </head>
 
     <body>
-        <div id="header" class="justify-content-center">
+        <header id="header" class="justify-content-center">
             <div id="header-top">
                 <div id="logo" class="d-flex justify-content-center">
                     <img src="{{asset('img/logo-header.png')}}" alt="logo" width="400" height="200">
@@ -26,7 +26,7 @@
 
             {{-- Navbar --}}
             <div class="d-flex justify-content-center">
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c6a7de; font-size: 20px;">
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light" style="background-color: #c6a7de; font-size: 20px;">
                     <div class="container-fluid ">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -34,28 +34,28 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
+                                    <a class="nav-link active" aria-current="page" href="#home">Página Principal</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Nosotros</a>
+                                    <a class="nav-link" href="#nosotros">Nosotros</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Servicios</a>
+                                    <a class="nav-link" href="#servicios">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contacto</a>
+                                    <a class="nav-link" href="#contacto">Contacto</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Reserva un turno</a>
+                                    <a class="nav-link" href="#solicitar-turno">Reserva un turno</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
-        </div>
+        </header>
 
-        <div id="home">
+        <div id="home" class="section">
             <div id="home-top">
                 <div id="home-top-left">
                     <div id="home-top-left-title">
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <div id="nosotros">
+        <div id="nosotros" class="section">
             <div id="nosotros-top">
                 <div id="nosotros-top-left">
                     <div id="nosotros-top-left-img">
@@ -86,7 +86,7 @@
             </div>
         </div>
 
-        <div id="servicios">
+        <div id="servicios" class="section">
             <div id="servicios-top">
                 <div id="servicios-top-title">
                     <h1>Nuestros Servicios</h1>
@@ -224,7 +224,7 @@
             </div>
         </div>
 
-        <div id="contacto">
+        <div id="contacto" class="section">
             <div class="row mt-3">
                 <div class="col-md-6">
                     <div id="contacto-left">
@@ -301,7 +301,7 @@
 
         </div>
 
-        <div id="solicitar-turno">
+        <div id="solicitar-turno" class="section">
             <form action="">
                 <div id="solicitar-turno-title">
                     <h1>Solicitar Turno</h1>
@@ -371,5 +371,44 @@
                 <p>2024 Consultorio Serenidad Vital - Todos los derechos reservados</p>
             </div>
         </div>
+
+        <script type="text/javascript">
+            document.addEventListener('scroll', function () {
+                var scrollPosition = window.scrollY;
+                var sections = document.querySelectorAll('.section');
+
+                sections.forEach(function (section) {
+                    var sectionOffset = section.offsetTop;
+                    var sectionHeight = section.offsetHeight;
+
+                    if (scrollPosition >= sectionOffset && scrollPosition < sectionOffset + sectionHeight) {
+                        // Si la sección está completamente visible, activar el enlace correspondiente en el navbar
+                        var sectionId = section.getAttribute('id');
+                        var navLink = document.querySelector('a[href="#' + sectionId + '"]');
+                        navLink.classList.add('active');
+                    } else {
+                        // Si la sección no está completamente visible, desactivar el enlace correspondiente en el navbar
+                        var sectionId = section.getAttribute('id');
+                        var navLink = document.querySelector('a[href="#' + sectionId + '"]');
+                        navLink.classList.remove('active');
+                    }
+                });
+            });
+
+
+            window.addEventListener('scroll', function() {
+                var header = document.getElementById('header');
+                var scrollPosition = window.scrollY;
+
+                if (scrollPosition > 0) { // Ajusta la posición según sea necesario
+                    header.classList.add('header-fixed');
+                } else {
+                    header.classList.remove('header-fixed');
+                }
+            });
+
+
+        </script>
+
     </body>
 </html>

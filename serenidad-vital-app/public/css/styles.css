@@ -8,6 +8,22 @@ body{
     background-color: #c6a7de;
 }
 
+.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-fixed #header-top {
+    display: none;
+}
+
+.navbar-nav .nav-link.active {
+    color: #582869;
+    font-weight: bold;
+}
+
 #home{
     width: 100%;
     height: auto;
