@@ -103,7 +103,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <button class="btn btn-sm btn-success">Solicitar Turno</button>
+                                    <a class="btn btn-sm btn-success" href="#solicitar-turno">Solicitar Turno</a>
                                 </div>
                             </div>
                         </div>
@@ -408,6 +408,15 @@
                 var scrollPosition = window.scrollY;
                 var sections = document.querySelectorAll('.section');
 
+                var header = document.getElementById('header');
+                var scrollPosition = window.scrollY;
+
+                if (scrollPosition > 0) { // Ajusta la posición según sea necesario
+                    header.classList.add('header-fixed');
+                } else {
+                    header.classList.remove('header-fixed');
+                }
+
                 sections.forEach(function (section) {
                     var sectionOffset = section.offsetTop;
                     var sectionHeight = section.offsetHeight;
@@ -424,18 +433,6 @@
                         navLink.classList.remove('active');
                     }
                 });
-            });
-
-
-            window.addEventListener('scroll', function() {
-                var header = document.getElementById('header');
-                var scrollPosition = window.scrollY;
-
-                if (scrollPosition > 0) { // Ajusta la posición según sea necesario
-                    header.classList.add('header-fixed');
-                } else {
-                    header.classList.remove('header-fixed');
-                }
             });
 
 
