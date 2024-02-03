@@ -333,7 +333,8 @@
         </div>
 
         <div id="solicitar-turno" class="section">
-            <form action="">
+            <form action="{{route('solicitar-turno.store')}}" method="POST">
+                @csrf
                 <div id="solicitar-turno-title">
                     <h1>Solicitar Turno</h1>
                 </div>
@@ -345,14 +346,14 @@
                     <div class="row g-2">
                         <div class="col-md">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
                                 <label for="nombre">Nombre</label>
                             </div>
                         </div>
 
                         <div class="col-md">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
                                 <label for="apellido">Apellido</label>
                             </div>
                         </div>
@@ -361,31 +362,31 @@
                     <div class="row g-2">
                         <div class="col-md">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                 <label for="email">Email</label>
                             </div>
                         </div>
 
                         <div class="col-md">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+                                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono">
                                 <label for="telefono">Teléfono</label>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="tipo-consulta" aria-label="tipo de consulta">
+                        <select class="form-select" name="tipo-consulta" id="tipo-consulta" aria-label="tipo de consulta">
                             <option selected disabled>Seleccione el tipo de consulta</option>
-                            <option value="1">Terapia Individual</option>
-                            <option value="2">Terapia de Pareja</option>
-                            <option value="3">Terapia Familiar</option>
-                            <option value="4">Psicoterapia Infantil y Adolescente</option>
-                            <option value="5">Evaluación Psicológica</option>
-                            <option value="6">Asesoramiento en Salud Mental</option>
-                            <option value="7">Asesoramiento Psicológico</option>
-                            <option value="8">Terapia Online</option>
-                            <option value="9">Orientación Vocacional y Profesional</option>
+                            <option value="Terapia Individual">Terapia Individual</option>
+                            <option value="Terapia de Pareja">Terapia de Pareja</option>
+                            <option value="Terapia Familiar">Terapia Familiar</option>
+                            <option value="Psicoterapia Infantil y Adolescente">Psicoterapia Infantil y Adolescente</option>
+                            <option value="Evaluación Psicológica">Evaluación Psicológica</option>
+                            <option value="Asesoramiento en Salud Mental">Asesoramiento en Salud Mental</option>
+                            <option value="Asesoramiento Psicológico">Asesoramiento Psicológico</option>
+                            <option value="Terapia Online">Terapia Online</option>
+                            <option value="Orientación Vocacional y Profesional">Orientación Vocacional y Profesional</option>
                         </select>
                         <label for="tipo-consulta">Tipo de consulta</label>
                     </div>
